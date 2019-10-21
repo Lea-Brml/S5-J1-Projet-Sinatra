@@ -6,9 +6,9 @@
 
   <body>
     <h1>Mon super site de gossip, depuis le dossier views !</h1>
-    <p> Bienvenu moussaillon, la liste des potins devrait bientôt arriver. Mais, en attendant tu peux aller <a href="/gossips/new/"> créer un nouveau potin </a>.
+    <p> Bienvenu moussaillon, la liste des potins devrait bientôt arriver. Mais, en attendant tu peux aller <a href="/gossips/new/"> créer un nouveau potin </a>.</p>
 
-    <%=gossips.each do |gossip| %>
+    <% gossips.each do |gossip| %>
     <p>
       <%= gossip.author %><br>
       <%= gossip.content %>

@@ -36,6 +36,8 @@ class Gossip
   end
 
 
+
+
   def self.find(id)
 
     return Gossip.all[id]
