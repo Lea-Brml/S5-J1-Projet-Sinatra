@@ -1,0 +1,17 @@
+<html>
+
+  <head>
+    <title>Page Potin</title>
+  </head>
+
+  <body>
+
+    <h1 ">Voici la page du Potin que tu as décidé de stalker, soit la n° <span style="color : red;"><%= params['id'] %></span> !</h1>
+
+    <p> Voici le contenu du potin : <%= Gossip.all[params['id'].to_i].author %></p>
+    <p> Voici le contenu du potin : <%= Gossip.all[params['id'].to_i].content %></p>
+
+
+  </body>
+
+</html>
