@@ -16,7 +16,7 @@ class Gossip
 
   def save
 
-    CSV.open("db/gossip.csv","ab") do |csv|
+    CSV.open("db/gossip.csv","ab") do |csv|           #pour enregistrer les potins sur le fichier csv
         csv << [@author, @content]
             end
 
@@ -25,7 +25,7 @@ class Gossip
 
   def self.all
 
-    all_gossips = []
+    all_gossips = []                         #créer le tableau qui contiendra l'auteur et le contenu de chaque potin 
 
     CSV.read("./db/gossip.csv").each do |csv_line|
       all_gossips << Gossip.new(csv_line[0], csv_line[1])
