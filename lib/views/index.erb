@@ -4,10 +4,10 @@
     <title>The Gossip Project</title>
   </head>
 
-  <body>
-    <h1>Mon super site de gossip, depuis le dossier views !</h1>
+  <body style ="margin-left:80px;">
+    <h1 style ="margin-top:40px; text-align:center;">Mon super site de gossip : <span style="color:red;"> The Gossip Project </span> mon fwèw !</h1> <br><br>
     <p> Bienvenu moussaillon, la liste des potins devrait bientôt arriver. Mais, en attendant tu peux aller <a href="/gossips/new/"> créer un nouveau potin </a>.</p>
-
+    <br>
     <% gossips.each_with_index do |gossip, index| %>
     <p>
       <%= gossip.author %><br>

@@ -9,9 +9,10 @@
     <h1 ">Voici la page du Potin que tu as décidé de stalker, soit la n° <span style="color : red;"><%= params['id'] %></span> !</h1>
 
     <p> Voici le contenu du potin : <%= Gossip.all[params['id'].to_i].author %></p>
-    <p> Voici le contenu du potin : <%= Gossip.all[params['id'].to_i].content %></p>
+    <p> Voici le contenu du potin : <%= Gossip.all[params['id'].to_i].content %></p><br><br>
 
-    <p>Tu peux retourner sur la page d'accueil du Gossip Project ? Rien de plus simple ! Clique donc <a href="/">ICI </a>!</p>
+    <p>Tu souhaites éditer ce potin ? Tu penses que c'est du bullshit ? Rien de plus simple ! Clique donc <a href="/gossips/id/edit/">ICI </a>!</p>
+    <p>Tu souhaites retourner sur la page d'accueil du Gossip Project ? Rien de plus simple ! Clique donc <a href="/">ICI </a>!</p>
 
 
   </body>

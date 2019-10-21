@@ -23,6 +23,15 @@ class ApplicationController < Sinatra::Base     # la classe AppController hérit
     #"Voici le numéro du potin que tu veux :  #{params['id']}!"
   end
 
+  get '/gossips/id/edit/' do
+    erb :edit
+  end
+
+  post '/gossips/id/edit/' do
+    erb :edit
+    redirect '/'
+  end
+
 
 
 end
